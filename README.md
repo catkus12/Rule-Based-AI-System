@@ -23,7 +23,7 @@ The **Adventure Game** system will follow these rules:
     -**Command:** take <item> or pick up <item>
         - **If** yes, remove it from rooms[current_room]["items"] and add to player_state["inventory"].
         - **If** no, respond “You can’t find <item> here.”
-    - **Command:** use <item> [on <target>
+    - **Command:** use <item> 
         - Check **if** <item> is in the player’s inventory.
         - **If** <target> is specified, check if it exists in the room or is relevant. For example, use the key on the door.
 	        - **If** the rules say “key opens the door,” then unlock the door or remove a barrier.
@@ -38,7 +38,7 @@ The **Adventure Game** system will follow these rules:
         - **If** the player’s health changes, display it.
         - **If** the room is dark and the player doesn’t have a light source, mention they can’t see anything.
 7.	**Progression & End Conditions:**
-    - Victory Condition: “If the player reaches the main enterance with the key, print ‘You win!’ and end the game.”
+    - Victory Condition: “If the player reaches the main entrance with the key, print ‘You win!’ and end the game.”
     - Defeat Condition: “ **If** the player’s health falls to 0 or below, print ‘You have died.’ and end the game.”
     - Story Milestones: “Once the player picks up the sword the statue comes to life.”
 
@@ -48,5 +48,5 @@ The **Adventure Game** system will follow these rules:
 ### Project Overview
 My project was designing an interesting decision making game. My system used a series of if-then statements to check what the player is trying to do against the area the player is in, the player itself then respond appropriately.
 ### Challenges: 
-Some challenges I had was when prompting the AI fto fix some errors I had if I wasn’t specific enough the AI would suggest to change code that was not part of the problem. So, I had give the AI specific feedback on how I wanted it to work or what needed to be fixed. For example at one point the player would get flee feedback for the basement when entering a hallway, and it ended up being a indentation error. The AI is also not very creative when it came to designing the program so to get a starting point I had to give it every room, interaction, and item in said rooms and how to get to those rooms or the rooms would exist with no way for the player to get to them.
+Some challenges I had was when prompting the AI to fix some errors I had if I wasn’t specific enough the AI would suggest to change code that was not part of the problem. So, I had give the AI specific feedback on how I wanted it to work or what needed to be fixed. For example at one point the player would get flee feedback for the basement when entering a hallway, and it ended up being a indentation error. The AI is also not very creative when it came to designing the program so to get a starting point I had to give it every room, interaction, and item in said rooms and how to get to those rooms or the rooms would exist with no way for the player to get to them.
 
